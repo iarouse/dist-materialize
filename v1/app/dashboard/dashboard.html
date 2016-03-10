@@ -1,0 +1,126 @@
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default panel-minimal">
+                <div class="divider divider-md"></div>
+                <div class="panel-heading">Traffic</div>
+                <div class="panel-body">
+                    <div data-echarts data-options="combo.options" style="height: 400px;"></div>
+                    <div class="divider divider-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <!-- Stats -->
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+            <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
+                <span class="zmdi zmdi-local-airport"></span>
+            </span>
+            <div class="box-info">
+                <p class="size-h2">16 <span class="size-h4">%</span></p>
+                <p class="text-muted"><span data-translate="GROWTH"></span></p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+            <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-info">
+                <i class="zmdi zmdi-accounts"></i>
+            </span>
+            <div class="box-info">
+                <p class="size-h2">22 <span class="size-h4">%</span></p>
+                <p class="text-muted"><span data-translate="NEW_USERS"></span></p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+            <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-warning">
+                <i class="zmdi zmdi-money"></i>
+            </span>
+            <div class="box-info">
+                <p class="size-h2">51 <span class="size-h4">k</span></p>
+                <p class="text-muted"><span data-translate="PROFIT"></span></p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+            <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-primary">
+                <i class="zmdi zmdi-shopping-cart"></i>
+            </span>
+            <div class="box-info">
+                <p class="size-h2">21 <span class="size-h4">k</span></p>
+                <p class="text-muted"><span data-translate="SALES"></span></p>
+            </div>
+            </div>
+        </div>
+        <!-- end stats -->                
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body padding-lg">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="panel">
+                                <div class="panel-heading">Budget vs Spending</div>
+                                <div class="divider divider-md"></div>
+                                <div class="panel-body">
+                                    <div class="vprogressbar-container brand-success">
+                                        <ul class="vprogressbar clearfix">
+                                            <li><span class="vprogressbar-percent bg-info-alt" style="height:65%"></span></li>
+                                            <li><span class="vprogressbar-percent bg-success" style="height:50%;"></span></li>
+                                            <li><span class="vprogressbar-percent bg-warning" style="height:40%;"></span></li>
+                                            <li><span class="vprogressbar-percent bg-primary" style="height:80%;"></span></li>
+                                        </ul>
+                                        <ul class="vprogressbar-legend">
+                                            <li><span class="vpointer bg-info-alt"></span> Direct</li>
+                                            <li><span class="vpointer bg-success"></span> Instagram</li>
+                                            <li><span class="vpointer bg-warning"></span> Twitter</li>
+                                            <li><span class="vpointer bg-primary"></span> Facebook</li>
+                                        </ul>
+                                        <div class="vprogressbar-info">
+                                            <span>Source of Acquisition</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                             
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="panel">
+                                <div class="panel-heading">Nationality</div>
+                                <div class="divider divider-md"></div>
+                                <div class="panel-body">
+                                    <div data-echarts
+                                         data-options="donut.options"
+                                         style="height:300px;"
+                                    ></div>
+                                </div>
+                            </div>            
+                        </div>
+                        <div class="col-lg-4">
+                            <section class="panel">
+                                <div class="panel-heading">Platform</div>
+                                <div class="divider divider-md"></div>
+                                <div class="panel-body">
+                                    <div data-echarts
+                                         data-options="radar.options"
+                                         style="height:300px;"
+                                    ></div>
+                                </div>
+                            </section>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
